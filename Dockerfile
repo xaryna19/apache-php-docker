@@ -1,5 +1,5 @@
 FROM alpine:3.21
-LABEL maintainer="xaryna@gmail.com"
+LABEL maintainer="xaryna19@gmail.com"
 LABEL description="Alpine based image with apache2 and php8.4"
 
 # Setup apache and php
