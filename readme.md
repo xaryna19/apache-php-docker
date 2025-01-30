@@ -1,15 +1,15 @@
 Build the image
-`sudo docker build -t xaryna/alpine-apache-php .`
+`sudo docker build -t xaryna/apache-php-docker .`
 
 Docker Compose
 ```
     services:
       web:
-        image: xaryna/alpine-apache-php
+        image: xaryna/apache-php-docker
         restart: always
         ports:
           - "1880:80"
           #- "1443:443"
         volumes:
-          - /home/debian/docker/data/app/first-app/app:/htdocs
+          - /home/debian/docker/data/www/app_01:/htdocs
 ```
